@@ -1,0 +1,24 @@
+a = int(input("Enter your first value : "))
+val = input("Enter your choice: +,-,*,/ : ")
+b = int(input("Enter your second value : "))
+print("Your solution of  ",a,val,b,"is : ")
+#this is the value which we want wrong
+if a==56 and val=='+' and b==9:
+    print("7777")
+#this is the value which we want wrong
+elif a==45 and val=="-" and b==5:
+    print("56")
+#this is the value which we want wrong
+elif a == 56 and val=="/" and b==6:
+    print("6")
+#from here our main calculator starts
+elif val=="+":
+    print(a+b)
+elif val=='-':
+    print(a-b)
+elif val=='*':
+    print(a*b)
+elif val=='/':
+    print(a/b)
+else:
+    print("Error in symbol")
